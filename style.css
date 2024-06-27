@@ -43,3 +43,31 @@ button {
     overflow: hidden;
 }
 
+.confetti, .heart {
+    position: absolute;
+    top: -10px;
+}
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    animation: fall linear infinite;
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 0% 40%, 50% 100%, 100% 40%);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
