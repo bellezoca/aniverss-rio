@@ -6,7 +6,6 @@ document.getElementById('birthdayButton').addEventListener('click', function() {
         confetti.classList.add('confetti');
         confetti.style.left = Math.random() * 100 + 'vw';
         confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
-        confetti.style.backgroundColor = 'yellow';
         confettiContainer.appendChild(confetti);
     }
 
@@ -19,23 +18,6 @@ document.getElementById('birthdayButton').addEventListener('click', function() {
     }
 });
 
-const styles = `
-    .confetti {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: yellow;
-        animation: fall linear infinite;
-    }
-
-    .heart {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
-        clip-path: polygon(50% 0%, 0% 40%, 50% 100%, 100% 40%);
-        animation: fall linear infinite;
-    }
 
     @keyframes fall {
         0% {
