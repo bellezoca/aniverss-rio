@@ -18,6 +18,12 @@ h1 {
     color: red;
 }
 
+.message {
+    font-size: 1.5em;
+    color: purple;
+    margin-bottom: 20px;
+}
+
 button {
     font-size: 2em;
     padding: 10px 20px;
@@ -36,3 +42,4 @@ button {
     pointer-events: none;
     overflow: hidden;
 }
+
